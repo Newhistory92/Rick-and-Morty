@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+input {
+  background-color: rgb(40, 102, 157);
+  font-family: sans-serif;
+  border-radius: 10px 0 0 10px;
+  border-color: rgb(225, 237, 228);
+  outline: none;
+}
+button {
+  -webkit-text-stroke: 1px black rgb(24, 114, 53);
+  border-radius: 0 10px 10px 0;
+  border-color: rgb(40, 102, 157);
+  color: rgb(24, 114, 53);
+  background-color: #282c34;
+  font-family: sans-serif;
+}
+
+button:hover {
+  color: #282c34;
+  background-color: rgb(41, 193, 52);
+  cursor: pointer;
+}

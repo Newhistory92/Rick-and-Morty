@@ -1,0 +1,115 @@
+
+  .Container {
+    background-color: antiquewhite;
+   display:flexbox;
+   place-items: center;
+   position: relative;
+   width: 185px;
+   height: 275px;
+  padding-top: 0px;
+   border-radius:1em ;
+   background: linear-gradient(50deg, #2a5a3b, #1e4886,);
+   overflow: hidden;
+  }
+  .Container::before{
+    content: "";
+    position: absolute;
+    width: 355px;
+    height: 50px;
+    top:0;
+    right: 35px;
+    transition:1.9s ;
+    background: linear-gradient(50deg, #00ff59,#02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+  
+  }
+
+  .Container:hover::before{
+    animation:cardEffect 1.9s;
+  
+  }
+
+  @keyframes cardEffect{
+    100%{
+      transform: rotate(-45deg) translate(0,450px);
+    }
+  }
+
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: top;
+    width: 150px;
+    height: 175px;
+    padding: 1em;
+    text-align: center;
+    border-radius: .8em;
+    color: #858585;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    
+    }
+    .imageContainer :hover{
+      color: aliceblue;
+    
+    }
+    img {
+      width: 170px;
+      border-radius: 1em;
+    
+      
+    }
+
+    .name {
+  
+        position: absolute;
+        margin-top: 170px; 
+      
+      }
+      .propsContainer {
+       justify-content: space-evenly;
+       display: flex;
+        font-size: 10px;
+       margin: 15px;
+      color: #2a5a3b;
+      }
+      .propsContainer h2 {
+          margin: 10;
+      } 
+
+      .button { 
+ position:absolute;
+  top: 2px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  background-color: rgba(45,113,143,0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: none;;
+        
+        
+      } 
+
+      .button:hover {
+        background-color: rgba(45,113,143,0.9);
+      }
+      
+      .button:focus {
+        outline: none;    
+      }
+      
+      .buttonContainer {
+        display:flexbox;
+        margin-top: 0px;
+       
+      }
